@@ -8,9 +8,20 @@ public class Book {
 
     private boolean available;
 
+    private Person person;
+
     public Book(String title, String author) {
         setTitle(title);
         setAuthor(author);
+        //setPerson(person);
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Book{");
+        sb.append("person='").append(person.getFirstName()).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     public String getTitle() {
@@ -37,5 +48,11 @@ public class Book {
         this.available = available;
     }
 
+    public String getPerson() {
+        return person.getFirstName();
+    }
 
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 }

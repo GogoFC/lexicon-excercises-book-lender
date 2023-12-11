@@ -10,8 +10,12 @@ public class Person {
 
     public Person(int id, String firstName, String lastName) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        setFirstName(firstName);
+        setLastName(lastName);
+    }
+
+    public void loanBook (Book title) {
+        title.setPerson(this);
     }
 
     public void setLoaned(Book loaned) {
@@ -20,5 +24,21 @@ public class Person {
 
     public String getLoaned() {
         return loaned.getTitle();
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
