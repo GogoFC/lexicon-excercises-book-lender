@@ -10,13 +10,13 @@ public class Main {
         Person goran = new Person(1000,"Goran","Muminovic");
         Person amra = new Person(1001, "Amra","Piragic");
 
-        amra.setLoaned(designPatterns);
-        goran.setLoaned(littlePrince);
+        //amra.setLoaned(designPatterns);
+        //goran.setLoaned(littlePrince);
 
         goran.loanBook(c);
         //c.setPerson(goran);
 
-        System.out.println("Amra loaned " + amra.getLoaned());
+        //System.out.println("Amra loaned " + amra.getLoaned());
         System.out.println("Goran loaned " + goran.getLoaned());
 
         System.out.println(c.getPerson());

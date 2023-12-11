@@ -16,11 +16,12 @@ public class Person {
 
     public void loanBook (Book title) {
         title.setPerson(this);
+        this.loaned = title;
     }
 
-    public void setLoaned(Book loaned) {
-        this.loaned = loaned;
-    }
+    //public void setLoaned(Book loaned) {
+    //    this.loaned = loaned;
+    //}
 
     public String getLoaned() {
         return loaned.getTitle();
